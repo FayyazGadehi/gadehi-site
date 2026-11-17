@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "portal_name": "Gadehi Baloch Global Heritage",
+    "founder": "Fayyaz Ali Gadehi",
+    "version": "1.0.0"
+  },
+  "data": {
+    "individuals_and_professionals": [
+      {
+        "full_name": "Sardar Ali Dino Khan Gadehi",
+        "role_title": "Tribal Chief (Sardar) of the Gadehi Baloch Tribe",
+        "category": "Tribal Leadership & Public Service",
+        "location": { "city": "Larkana / Dadu", "province_state": "Sindh", "country": "Pakistan" },
+        "institution": "Gadehi Tribal Council",
+        "biography": "Respected Chief (Sardar) of the Gadehi Baloch community, leading tribal unity, traditional jirga reconciliation, and educational advancement across Sindh.",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "full_name": "Fayyaz Ali Gadehi",
+        "role_title": "Founder & Chief Digital Archivist",
+        "category": "Engineering & Technology",
+        "location": { "city": "Karachi", "province_state": "Sindh", "country": "Pakistan" },
+        "institution": "Gadehi Baloch Global Heritage",
+        "biography": "Web developer, educator, and founder of the Gadehi Baloch Global Heritage digital archive, preserving tribal history and uniting community professionals.",
+        "verification_status": "VERIFIED"
+      }
+    ]
+  }
+}
