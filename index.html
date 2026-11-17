@@ -1,12 +1,13 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gadehi (Gadhi) Baloch Community — History, Leadership & Notable Members</title>
+<title>Gadehi (Gadhi) Baloch Community — Founded by Fayyaz Ali Gadehi</title>
 <meta name="google-site-verification" content="NETKShawIm-BD65lwKijVGIByOOUI3V-zwIzm5RSIA4" />
-<meta name="description" content="The official Gadehi (also spelled Gadhi) community portal — tribal leadership under Sardar Ali Dino Khan Gadehi, Baloch history, culture, and notable professors, judges, and doctors.">
-<meta name="keywords" content="Baloch, Sindhi baloch, Dadu, Larkana, Dokri, Gadehi, Gadhi, Gadehi caste, Gadhi caste, Gadehi surname, Sardar Ali Dino Khan Gadehi, Gadehi community, Gadehi history">
+<meta name="description" content="Official Gadehi (Gadhi) Baloch community portal founded by Fayyaz Ali Gadehi — tribal leadership under Sardar Ali Dino Khan Gadehi, Baloch history, culture, and notable professors, judges, and doctors.">
+<meta name="keywords" content="Fayyaz Ali Gadehi, Baloch, Sindhi baloch, Dadu, Larkana, Dokri, Gadehi, Gadhi, Gadehi caste, Sardar Ali Dino Khan Gadehi, Gadehi community, Gadehi history">
 <link rel="canonical" href="https://github.io">
 
 <link rel="preconnect" href="https://googleapis.com">
@@ -29,92 +30,128 @@
     font-family:'Manrope', sans-serif;
     color:var(--ink);
     background:var(--ivory);
-    line-height:1.65;
+    line-height:1.7;
     overflow-x:hidden;
   }
-  h1,h2,h3{ font-family:'Fraunces', serif; }
+  h1,h2,h3,h4{ font-family:'Fraunces', serif; }
   a{ text-decoration:none; color:inherit; }
   .wrap{ max-width:1100px; margin:0 auto; padding:0 24px; }
 
+  /* -------- Top Owner Strip -------- */
+  .owner-bar{
+    background: var(--indigo-deep);
+    color: var(--ivory);
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(224,166,38,0.35);
+  }
+  .owner-bar strong{
+    color: var(--marigold);
+    font-weight: 800;
+  }
+
+  /* -------- Nav -------- */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(250,246,236,0.95);
+    background:rgba(250,246,236,0.96);
     border-bottom:1px solid var(--line);
+    box-shadow: 0 2px 12px rgba(28,43,74,0.05);
   }
   nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1100px; margin:0 auto; flex-wrap:wrap; gap:12px; }
-  .brand{ font-family:'Fraunces', serif; font-weight:700; font-size:1.3rem; }
+  .brand{ font-family:'Fraunces', serif; font-weight:700; font-size:1.35rem; }
   .brand span{ color:var(--brick); }
-  .navlinks{ display:flex; gap:22px; font-weight:600; font-size:0.9rem; flex-wrap:wrap; }
+  .navlinks{ display:flex; gap:20px; font-weight:600; font-size:0.9rem; flex-wrap:wrap; align-items:center; }
   .navlinks a:hover{ color:var(--brick); }
+  .founder-pill{
+    background: var(--indigo);
+    color: var(--marigold) !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
 
+  /* -------- Hero -------- */
   .hero{
     position:relative;
-    padding:95px 24px 80px;
+    padding:95px 24px 85px;
     background: var(--indigo);
     color: var(--ivory);
   }
   .hero-inner{ max-width:1100px; margin:0 auto; }
   .eyebrow{
     display:inline-flex; align-items:center; gap:10px;
-    font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--marigold); font-weight:700; margin-bottom:18px;
+    font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--marigold); font-weight:800; margin-bottom:18px;
   }
-  .eyebrow::before{ content:""; width:26px; height:2px; background:var(--marigold); display:inline-block; }
+  .eyebrow::before{ content:""; width:28px; height:2px; background:var(--marigold); display:inline-block; }
   .hero h1{
-    font-size:clamp(2.2rem, 5vw, 4rem);
+    font-size:clamp(2.3rem, 5vw, 4.1rem);
     font-weight:600;
     line-height:1.1;
-    max-width:800px;
+    max-width:840px;
     color: var(--ivory);
   }
   .hero h1 em{ font-style:italic; color:var(--marigold); }
   .hero p.lede{
-    max-width:600px; margin-top:20px; font-size:1.06rem;
-    color:rgba(250,246,236,0.85);
+    max-width:630px; margin-top:20px; font-size:1.08rem;
+    color:rgba(250,246,236,0.88);
   }
-  .hero-cta{ display:flex; gap:14px; margin-top:32px; flex-wrap:wrap; }
+  .hero-cta{ display:flex; gap:16px; margin-top:34px; flex-wrap:wrap; }
   .btn{
     display:inline-block; padding:13px 26px; border-radius:4px;
-    font-weight:700; font-size:0.92rem;
+    font-weight:700; font-size:0.94rem;
   }
   .btn-primary{ background:var(--marigold); color:var(--indigo-deep); }
-  .btn-ghost{ border:1px solid rgba(250,246,236,0.4); color:var(--ivory); }
+  .btn-ghost{ border:1px solid rgba(250,246,236,0.45); color:var(--ivory); }
 
   .hero-stats{
-    display:flex; gap:20px; margin-top:55px; border-top:1px solid rgba(250,246,236,0.2); padding-top:24px;
+    display:flex; gap:24px; margin-top:60px; border-top:1px solid rgba(250,246,236,0.2); padding-top:26px;
     flex-wrap:wrap;
   }
-  .stat{ flex:1; min-width:160px; }
+  .stat{ flex:1; min-width:170px; }
   .stat b{ font-family:'Fraunces', serif; font-size:1.65rem; display:block; color:var(--marigold); }
-  .stat span{ font-size:0.82rem; color:rgba(250,246,236,0.72); }
+  .stat span{ font-size:0.84rem; color:rgba(250,246,236,0.75); }
 
-  section{ padding:80px 0; }
+  /* -------- Sections -------- */
+  section{ padding:90px 0; }
   .tag{
     font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
     color:var(--brick); font-weight:800; margin-bottom:10px; display:block;
   }
-  .sec-head{ max-width:680px; margin-bottom:44px; }
-  .sec-head h2{ font-size:clamp(1.8rem,3.2vw,2.5rem); font-weight:600; line-height:1.15; }
-  .sec-head p{ margin-top:12px; color:#4a5470; font-size:1rem; }
+  .sec-head{ max-width:700px; margin-bottom:46px; }
+  .sec-head h2{ font-size:clamp(1.85rem,3.4vw,2.6rem); font-weight:600; line-height:1.15; }
+  .sec-head p{ margin-top:12px; color:#4a5470; font-size:1.02rem; }
 
-  .about-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:44px; align-items:start; }
-  .about-grid p{ color:#3c4560; margin-bottom:16px; }
-  .timeline{ border-left:2px solid rgba(28,43,74,0.2); padding-left:24px; display:flex; flex-direction:column; gap:24px; }
-  .tl-item h4{ font-family:'Fraunces', serif; font-size:1.12rem; font-weight:600; margin-bottom:4px; }
-  .tl-item p{ color:#4a5470; font-size:0.93rem; margin-bottom:0; }
+  .about-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap:46px; align-items:start; }
+  .about-grid p{ color:#3c4560; margin-bottom:16px; font-size:1rem; }
+  .timeline{ border-left:2px solid rgba(28,43,74,0.22); padding-left:24px; display:flex; flex-direction:column; gap:26px; }
+  .tl-item h4{ font-size:1.15rem; font-weight:600; margin-bottom:5px; }
+  .tl-item p{ color:#4a5470; font-size:0.94rem; margin-bottom:0; }
   .tl-dot{ position:relative; }
   .tl-dot::before{
     content:""; position:absolute; left:-29.5px; top:6px;
-    width:9px; height:9px; border-radius:50%; background:var(--marigold);
+    width:10px; height:10px; border-radius:50%; background:var(--marigold);
   }
 
   .cards-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
   }
-  .pro-card{
+  .info-box{
     background: var(--ivory);
+    padding: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+  .info-box h3{ font-size: 1.28rem; margin-bottom: 10px; color: var(--indigo); }
+  .info-box p{ color: #4a5470; font-size: 0.94rem; }
+
+  .pro-card{
+    background: var(--sand);
     border: 1px solid var(--line);
     border-radius: 6px;
     overflow: hidden;
@@ -123,78 +160,98 @@
   }
   .pro-card img{
     width: 100%;
-    height: 240px;
+    height: 250px;
     object-fit: cover;
     background: var(--indigo);
     display: block;
   }
   .pro-card-body{
-    padding: 22px;
+    padding: 24px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .pro-role{
-    font-size: 0.72rem;
+    font-size: 0.74rem;
     font-weight: 800;
     color: var(--brick);
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
-  .pro-card h3{ margin: 6px 0 8px; font-size: 1.22rem; }
-  .pro-card p{ font-size: 0.9rem; color: #4a5470; margin-bottom: 16px; }
+  .pro-card h3{ margin: 6px 0 8px; font-size: 1.24rem; }
+  .pro-card p{ font-size: 0.92rem; color: #4a5470; margin-bottom: 18px; }
   .pro-btn{
     display: inline-block;
     background: var(--indigo);
     color: var(--marigold);
     text-align: center;
-    padding: 10px 16px;
+    padding: 11px 16px;
     border-radius: 4px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.86rem;
   }
+
+  .faq-item{
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+  }
+  .faq-item h4{ font-size: 1.15rem; margin-bottom: 8px; color: var(--indigo); }
+  .faq-item p{ color: #4a5470; font-size: 0.94rem; }
 
   footer{
     background: var(--indigo-deep);
-    color: rgba(250,246,236,0.7);
+    color: rgba(250,246,236,0.78);
     text-align: center;
-    padding: 26px 24px;
-    font-size: 0.85rem;
+    padding: 28px 24px;
+    font-size: 0.88rem;
   }
 </style>
 </head>
 <body>
 
+  <!-- TOPMOST OWNER BANNER -->
+  <div class="owner-bar">
+    Official Community Portal &bull; Founded &amp; Owned by <strong>Fayyaz Ali Gadehi</strong>
+  </div>
+
+  <!-- NAVIGATION -->
   <header>
     <nav>
       <a href="#" class="brand">Gadehi<span>.</span>Community</a>
       <div class="navlinks">
         <a href="#chief">Tribal Chief</a>
         <a href="#history">History</a>
+        <a href="#culture">Culture</a>
         <a href="#achievers">Notable Members</a>
-        <a href="#founder">Founder</a>
+        <a href="#faq">FAQ</a>
+        <a href="#founder" class="founder-pill">Founder: Fayyaz Ali Gadehi</a>
       </div>
     </nav>
   </header>
 
+  <!-- 1. HERO BANNER -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="eyebrow">Official Digital Archive</div>
+      <div class="eyebrow">Founded &amp; Curated by Fayyaz Ali Gadehi</div>
       <h1>The Heritage &amp; Pride of the <em>Gadehi (Gadhi)</em> Baloch Tribe</h1>
-      <p class="lede">A living record celebrating our tribal leadership, centuries-old Baloch roots across Sindh and Punjab, and the scholars, judges, and doctors shaping our future.</p>
+      <p class="lede">An official digital archive created by <strong>Fayyaz Ali Gadehi</strong> — celebrating our tribal leadership, centuries-old Baloch roots across Sindh and Punjab, and the scholars, judges, and doctors shaping our future.</p>
       <div class="hero-cta">
-        <a href="#chief" class="btn btn-primary">Meet Our Tribal Chief</a>
-        <a href="#achievers" class="btn btn-ghost">Explore Notable Members</a>
+        <a href="#founder" class="btn btn-primary">About Founder (Fayyaz Ali Gadehi)</a>
+        <a href="#chief" class="btn btn-ghost">Meet Our Tribal Chief</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>Baloch</b><span>Historic Tribal Lineage</span></div>
-        <div class="stat"><b>Sindh &amp; Punjab</b><span>Larkana, Dadu, Sukkur &amp; Jhang</span></div>
+        <div class="stat"><b>Fayyaz Ali Gadehi</b><span>Founder &amp; Portal Owner</span></div>
+        <div class="stat"><b>Baloch Lineage</b><span>Larkana, Dadu, Sukkur &amp; Jhang</span></div>
         <div class="stat"><b>Unity &amp; Honour</b><span>Preserving Culture &amp; Education</span></div>
       </div>
     </div>
   </section>
 
+  <!-- 2. TRIBAL CHIEF -->
   <section id="chief" style="background: var(--sand); border-bottom: 1px solid var(--line);">
     <div class="wrap">
       <div class="sec-head">
@@ -205,26 +262,5 @@
 
       <div class="about-grid">
         <div style="background: var(--indigo); border-radius: 6px; overflow: hidden; border: 2px solid var(--marigold);">
-          <img src="sardar-ali-dino.jpg" alt="Sardar Ali Dino Khan Gadehi" style="width: 100%; height: 350px; object-fit: cover; display: block;" onerror="this.src='https://ui-avatars.com'">
-          <div style="padding: 20px; text-align: center; color: var(--ivory);">
-            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--marigold); font-weight: 700; display: block; margin-bottom: 4px;">Tribal Head (Sardar)</span>
-            <h3 style="font-size: 1.35rem; margin-bottom: 4px; color: var(--ivory);">Sardar Ali Dino Khan Gadehi</h3>
-            <p style="font-size: 0.85rem; color: rgba(250,246,236,0.75); margin: 0;">Taluka Dokri, District Larkana, Sindh</p>
-          </div>
-        </div>
-
-        <div>
-          <h3 style="font-size: 1.45rem; margin-bottom: 14px; color: var(--indigo);">Biography &amp; Tribal Leadership</h3>
-          <p><strong>Sardar Ali Dino Khan Gadehi (Gadhi)</strong> is the esteemed Tribal Chief (Sardar) of the Gadehi Baloch community. Based in Taluka Dokri, District Larkana, he serves as the central pillar of unity, traditional justice, and cultural preservation for Gadehi families across Sindh and Punjab.</p>
-          <p>Alongside his tribal responsibilities, he has dedicated decades to public service and local governance. He has served as the <strong>General Secretary of the Pakistan Peoples Party (PPP)</strong> for Taluka Dokri and has been elected twice as a <strong>Member of the District Council Larkana</strong>.</p>
-
-          <div class="timeline">
-            <div class="tl-item tl-dot">
-              <h4>Chieftaincy of the Gadehi Tribe</h4>
-              <p>Leading the Gadehi (Gadhi) Baloch tribe with dignity, resolving community matters, and strengthening brotherhood across Larkana, Dadu, Sukkur, and Jhang.</p>
-            </div>
-            <div class="tl-item tl-dot">
-              <h4>Twice Elected District Council Member</h4>
-              <p>Elected twice by public mandate to represent his constituency in District Council Larkana.</p>
-            </div>
-            <div class="tl-item tl-dot">
+          <img src="sardar-ali-dino.jpg" alt="Sardar Ali Dino Khan Gadehi" style="width: 100%; height: 360px; object-fit: cover; display: block;" onerror="this.src='https://ui-avatars.com'">
+          <div style="padding: 22px; text-align: center; color: var(--ivory);">
