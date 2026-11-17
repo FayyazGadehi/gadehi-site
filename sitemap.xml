@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.gadehi-community.org/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://www.gadehi-community.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.gadehi-community.org/about.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.gadehi-community.org/history.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.gadehi-community.org/genealogy.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.gadehi-community.org/global-directory.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.gadehi-community.org/professionals.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.gadehi-community.org/culture.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.gadehi-community.org/archives.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.gadehi-community.org/contribute.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.gadehi-community.org/faq-contact.html</loc><priority>0.7</priority></url>
 </urlset>
