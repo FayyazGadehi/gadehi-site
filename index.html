@@ -9,55 +9,8 @@
 <meta name="keywords" content="Baloch, Sindhi baloch, Dadu, Larkana, Dokri, Gadehi, Gadhi, Gadehi caste, Gadhi caste, Gadehi surname, Sardar Ali Dino Khan Gadehi, Gadehi community, Gadehi history">
 <link rel="canonical" href="https://github.io">
 
-<!-- Open Graph / social preview -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Gadehi (Gadhi) Baloch Community Portal">
-<meta property="og:description" content="Official digital archive of the Gadehi (Gadhi) Baloch tribe — leadership, history, and notable achievers. Curated by Fayyaz Ali Gadehi.">
-<meta property="og:url" content="https://github.io">
-<meta property="og:locale" content="en_PK">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gadehi (Gadhi) Baloch Community">
-<meta name="twitter:description" content="History, tribal leadership, and notable members of the Gadehi (Gadhi) community.">
-<meta name="robots" content="index, follow">
-
 <link rel="preconnect" href="https://googleapis.com">
-<link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Gadehi Community",
-  "alternateName": "Gadhi Community",
-  "url": "https://github.io",
-  "description": "History, tribal leadership, and notable members of the Gadehi (Gadhi) community and surname."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the Gadehi caste / surname?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gadehi (also spelled Gadhi) is a historic Baloch sub-tribe settled across Sindh and Southern Punjab. This portal documents its tribal leadership, history, and notable professionals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who is the Chief of the Gadehi tribe?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sardar Ali Dino Khan Gadehi (Gadhi) of Taluka Dokri, District Larkana is recognized as the respected Tribal Chief (Sardar) of the Gadehi Baloch community."
-      }
-    }
-  ]
-}
-</script>
+<link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -79,113 +32,86 @@
     line-height:1.65;
     overflow-x:hidden;
   }
-  h1,h2,h3,.display{ font-family:'Fraunces', serif; }
+  h1,h2,h3{ font-family:'Fraunces', serif; }
   a{ text-decoration:none; color:inherit; }
   .wrap{ max-width:1100px; margin:0 auto; padding:0 24px; }
 
-  /* -------- Nav -------- */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(250,246,236,0.92);
-    backdrop-filter: blur(8px);
+    background:rgba(250,246,236,0.95);
     border-bottom:1px solid var(--line);
   }
   nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1100px; margin:0 auto; flex-wrap:wrap; gap:12px; }
-  .brand{ font-family:'Fraunces', serif; font-weight:700; font-size:1.3rem; letter-spacing:0.02em; }
+  .brand{ font-family:'Fraunces', serif; font-weight:700; font-size:1.3rem; }
   .brand span{ color:var(--brick); }
-  .navlinks{ display:flex; gap:24px; font-weight:600; font-size:0.9rem; flex-wrap:wrap; }
-  .navlinks a{ position:relative; padding-bottom:4px; }
-  .navlinks a::after{
-    content:""; position:absolute; left:0; bottom:0; width:0; height:2px;
-    background:var(--marigold); transition:width .25s ease;
-  }
-  .navlinks a:hover::after{ width:100%; }
+  .navlinks{ display:flex; gap:22px; font-weight:600; font-size:0.9rem; flex-wrap:wrap; }
+  .navlinks a:hover{ color:var(--brick); }
 
-  /* -------- Hero -------- */
   .hero{
     position:relative;
-    padding:100px 24px 85px;
-    background:
-      radial-gradient(circle at 85% 20%, rgba(224,166,38,0.18), transparent 45%),
-      radial-gradient(circle at 10% 90%, rgba(178,58,46,0.10), transparent 40%),
-      var(--indigo);
-    color:var(--ivory);
-    overflow:hidden;
+    padding:95px 24px 80px;
+    background: var(--indigo);
+    color: var(--ivory);
   }
-  .hero::before{
-    content:"";
-    position:absolute; inset:0;
-    background-image:
-      repeating-linear-gradient(45deg, rgba(224,166,38,0.045) 0 2px, transparent 2px 26px),
-      repeating-linear-gradient(-45deg, rgba(224,166,38,0.045) 0 2px, transparent 2px 26px);
-    pointer-events:none;
-  }
-  .hero-inner{ position:relative; max-width:1100px; margin:0 auto; }
+  .hero-inner{ max-width:1100px; margin:0 auto; }
   .eyebrow{
     display:inline-flex; align-items:center; gap:10px;
     font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--marigold); font-weight:700; margin-bottom:20px;
+    color:var(--marigold); font-weight:700; margin-bottom:18px;
   }
   .eyebrow::before{ content:""; width:26px; height:2px; background:var(--marigold); display:inline-block; }
   .hero h1{
-    font-size:clamp(2.4rem, 5.5vw, 4.3rem);
+    font-size:clamp(2.2rem, 5vw, 4rem);
     font-weight:600;
-    line-height:1.06;
+    line-height:1.1;
     max-width:800px;
-    letter-spacing:-0.01em;
+    color: var(--ivory);
   }
   .hero h1 em{ font-style:italic; color:var(--marigold); }
   .hero p.lede{
-    max-width:600px; margin-top:22px; font-size:1.08rem;
-    color:rgba(250,246,236,0.82);
+    max-width:600px; margin-top:20px; font-size:1.06rem;
+    color:rgba(250,246,236,0.85);
   }
-  .hero-cta{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
+  .hero-cta{ display:flex; gap:14px; margin-top:32px; flex-wrap:wrap; }
   .btn{
-    display:inline-block; padding:13px 26px; border-radius:3px;
-    font-weight:700; font-size:0.92rem; letter-spacing:0.01em;
-    transition:transform .2s ease, box-shadow .2s ease;
+    display:inline-block; padding:13px 26px; border-radius:4px;
+    font-weight:700; font-size:0.92rem;
   }
   .btn-primary{ background:var(--marigold); color:var(--indigo-deep); }
-  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(224,166,38,0.35); }
-  .btn-ghost{ border:1px solid rgba(250,246,236,0.35); color:var(--ivory); }
-  .btn-ghost:hover{ border-color:var(--ivory); }
+  .btn-ghost{ border:1px solid rgba(250,246,236,0.4); color:var(--ivory); }
 
   .hero-stats{
-    display:flex; gap:20px; margin-top:60px; border-top:1px solid rgba(250,246,236,0.18); padding-top:26px;
+    display:flex; gap:20px; margin-top:55px; border-top:1px solid rgba(250,246,236,0.2); padding-top:24px;
     flex-wrap:wrap;
   }
   .stat{ flex:1; min-width:160px; }
-  .stat b{ font-family:'Fraunces', serif; font-size:1.75rem; display:block; color:var(--marigold); font-weight:600; }
-  .stat span{ font-size:0.82rem; color:rgba(250,246,236,0.68); }
+  .stat b{ font-family:'Fraunces', serif; font-size:1.65rem; display:block; color:var(--marigold); }
+  .stat span{ font-size:0.82rem; color:rgba(250,246,236,0.72); }
 
-  /* -------- Sections -------- */
-  section{ padding:85px 0; }
+  section{ padding:80px 0; }
   .tag{
     font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--brick); font-weight:800; margin-bottom:12px; display:block;
+    color:var(--brick); font-weight:800; margin-bottom:10px; display:block;
   }
-  .sec-head{ max-width:680px; margin-bottom:48px; }
-  .sec-head h2{ font-size:clamp(1.85rem,3.4vw,2.6rem); font-weight:600; line-height:1.15; }
-  .sec-head p{ margin-top:14px; color:#4a5470; font-size:1.02rem; }
+  .sec-head{ max-width:680px; margin-bottom:44px; }
+  .sec-head h2{ font-size:clamp(1.8rem,3.2vw,2.5rem); font-weight:600; line-height:1.15; }
+  .sec-head p{ margin-top:12px; color:#4a5470; font-size:1rem; }
 
-  .about-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:48px; align-items:start; }
+  .about-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:44px; align-items:start; }
   .about-grid p{ color:#3c4560; margin-bottom:16px; }
-  .timeline{ border-left:2px solid rgba(28,43,74,0.2); padding-left:26px; display:flex; flex-direction:column; gap:28px; }
-  .tl-item h4{ font-family:'Fraunces', serif; font-size:1.15rem; font-weight:600; margin-bottom:5px; }
-  .tl-item p{ color:#4a5470; font-size:0.94rem; margin-bottom:0; }
+  .timeline{ border-left:2px solid rgba(28,43,74,0.2); padding-left:24px; display:flex; flex-direction:column; gap:24px; }
+  .tl-item h4{ font-family:'Fraunces', serif; font-size:1.12rem; font-weight:600; margin-bottom:4px; }
+  .tl-item p{ color:#4a5470; font-size:0.93rem; margin-bottom:0; }
   .tl-dot{ position:relative; }
   .tl-dot::before{
-    content:""; position:absolute; left:-31.5px; top:6px;
+    content:""; position:absolute; left:-29.5px; top:6px;
     width:9px; height:9px; border-radius:50%; background:var(--marigold);
-    box-shadow:0 0 0 4px var(--sand);
   }
-  .ivory-tl .tl-dot::before{ box-shadow:0 0 0 4px var(--ivory); }
 
-  /* -------- Cards Grid -------- */
   .cards-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 26px;
   }
   .pro-card{
     background: var(--ivory);
@@ -194,21 +120,16 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform .2s ease, box-shadow .2s ease;
-  }
-  .pro-card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(28,43,74,0.1);
   }
   .pro-card img{
     width: 100%;
-    height: 245px;
+    height: 240px;
     object-fit: cover;
     background: var(--indigo);
     display: block;
   }
   .pro-card-body{
-    padding: 24px;
+    padding: 22px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -221,15 +142,8 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
-  .pro-card h3{
-    margin: 6px 0 8px;
-    font-size: 1.25rem;
-  }
-  .pro-card p{
-    font-size: 0.9rem;
-    color: #4a5470;
-    margin-bottom: 16px;
-  }
+  .pro-card h3{ margin: 6px 0 8px; font-size: 1.22rem; }
+  .pro-card p{ font-size: 0.9rem; color: #4a5470; margin-bottom: 16px; }
   .pro-btn{
     display: inline-block;
     background: var(--indigo);
@@ -241,20 +155,17 @@
     font-size: 0.85rem;
   }
 
-  /* -------- Footer -------- */
   footer{
     background: var(--indigo-deep);
-    color: rgba(250,246,236,0.65);
+    color: rgba(250,246,236,0.7);
     text-align: center;
-    padding: 28px 24px;
+    padding: 26px 24px;
     font-size: 0.85rem;
-    border-top: 1px solid rgba(250,246,236,0.1);
   }
 </style>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <header>
     <nav>
       <a href="#" class="brand">Gadehi<span>.</span>Community</a>
@@ -267,7 +178,53 @@
     </nav>
   </header>
 
-  <!-- HERO BANNER -->
   <section class="hero">
     <div class="hero-inner">
       <div class="eyebrow">Official Digital Archive</div>
+      <h1>The Heritage &amp; Pride of the <em>Gadehi (Gadhi)</em> Baloch Tribe</h1>
+      <p class="lede">A living record celebrating our tribal leadership, centuries-old Baloch roots across Sindh and Punjab, and the scholars, judges, and doctors shaping our future.</p>
+      <div class="hero-cta">
+        <a href="#chief" class="btn btn-primary">Meet Our Tribal Chief</a>
+        <a href="#achievers" class="btn btn-ghost">Explore Notable Members</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>Baloch</b><span>Historic Tribal Lineage</span></div>
+        <div class="stat"><b>Sindh &amp; Punjab</b><span>Larkana, Dadu, Sukkur &amp; Jhang</span></div>
+        <div class="stat"><b>Unity &amp; Honour</b><span>Preserving Culture &amp; Education</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chief" style="background: var(--sand); border-bottom: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Chief of the Gadehi (Gadhi) Tribe</span>
+        <h2>Sardar Ali Dino Khan Gadehi</h2>
+        <p>Respected Tribal Chief (Sardar) of the Gadehi Baloch tribe, community elder, and prominent political leader in Sindh.</p>
+      </div>
+
+      <div class="about-grid">
+        <div style="background: var(--indigo); border-radius: 6px; overflow: hidden; border: 2px solid var(--marigold);">
+          <img src="sardar-ali-dino.jpg" alt="Sardar Ali Dino Khan Gadehi" style="width: 100%; height: 350px; object-fit: cover; display: block;" onerror="this.src='https://ui-avatars.com'">
+          <div style="padding: 20px; text-align: center; color: var(--ivory);">
+            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--marigold); font-weight: 700; display: block; margin-bottom: 4px;">Tribal Head (Sardar)</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 4px; color: var(--ivory);">Sardar Ali Dino Khan Gadehi</h3>
+            <p style="font-size: 0.85rem; color: rgba(250,246,236,0.75); margin: 0;">Taluka Dokri, District Larkana, Sindh</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.45rem; margin-bottom: 14px; color: var(--indigo);">Biography &amp; Tribal Leadership</h3>
+          <p><strong>Sardar Ali Dino Khan Gadehi (Gadhi)</strong> is the esteemed Tribal Chief (Sardar) of the Gadehi Baloch community. Based in Taluka Dokri, District Larkana, he serves as the central pillar of unity, traditional justice, and cultural preservation for Gadehi families across Sindh and Punjab.</p>
+          <p>Alongside his tribal responsibilities, he has dedicated decades to public service and local governance. He has served as the <strong>General Secretary of the Pakistan Peoples Party (PPP)</strong> for Taluka Dokri and has been elected twice as a <strong>Member of the District Council Larkana</strong>.</p>
+
+          <div class="timeline">
+            <div class="tl-item tl-dot">
+              <h4>Chieftaincy of the Gadehi Tribe</h4>
+              <p>Leading the Gadehi (Gadhi) Baloch tribe with dignity, resolving community matters, and strengthening brotherhood across Larkana, Dadu, Sukkur, and Jhang.</p>
+            </div>
+            <div class="tl-item tl-dot">
+              <h4>Twice Elected District Council Member</h4>
+              <p>Elected twice by public mandate to represent his constituency in District Council Larkana.</p>
+            </div>
+            <div class="tl-item tl-dot">
