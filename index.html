@@ -1,234 +1,42 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gadehi (Gadhi) Baloch Community — Founded by Fayyaz Ali Gadehi</title>
+<title>Gadehi Baloch Global Heritage — Official Community & Genealogy Portal</title>
 <meta name="google-site-verification" content="NETKShawIm-BD65lwKijVGIByOOUI3V-zwIzm5RSIA4" />
-<meta name="description" content="Official Gadehi (Gadhi) Baloch community portal founded by Fayyaz Ali Gadehi — tribal leadership under Sardar Ali Dino Khan Gadehi, Baloch history, culture, and notable professors, judges, and doctors.">
+<meta name="description" content="Official Gadehi (Gadhi) Baloch community portal founded by Fayyaz Ali Gadehi — tribal leadership under Sardar Ali Dino Khan Gadehi, Baloch history, genealogy, culture, and global professional directory.">
 <meta name="keywords" content="Fayyaz Ali Gadehi, Baloch, Sindhi baloch, Dadu, Larkana, Dokri, Gadehi, Gadhi, Gadehi caste, Sardar Ali Dino Khan Gadehi, Gadehi community, Gadehi history">
-<link rel="canonical" href="https://github.io">
+<link rel="canonical" href="https://www.gadehi-community.org/">
 
-<link rel="preconnect" href="https://googleapis.com">
-<link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-  :root{
-    --indigo: #1c2b4a;
-    --indigo-deep: #10192e;
-    --marigold: #e0a626;
-    --brick: #b23a2e;
-    --sand: #f2e9d8;
-    --ivory: #faf6ec;
-    --line: rgba(28,43,74,0.14);
-    --ink: #1c2b4a;
-  }
-  *{ box-sizing:border-box; margin:0; padding:0; }
-  html{ scroll-behavior:smooth; }
-  body{
-    font-family:'Manrope', sans-serif;
-    color:var(--ink);
-    background:var(--ivory);
-    line-height:1.7;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,h4{ font-family:'Fraunces', serif; }
-  a{ text-decoration:none; color:inherit; }
-  .wrap{ max-width:1100px; margin:0 auto; padding:0 24px; }
-
-  /* -------- Top Owner Strip -------- */
-  .owner-bar{
-    background: var(--indigo-deep);
-    color: var(--ivory);
-    text-align: center;
-    padding: 8px 16px;
-    font-size: 0.82rem;
-    letter-spacing: 0.05em;
-    border-bottom: 1px solid rgba(224,166,38,0.35);
-  }
-  .owner-bar strong{
-    color: var(--marigold);
-    font-weight: 800;
-  }
-
-  /* -------- Nav -------- */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(250,246,236,0.96);
-    border-bottom:1px solid var(--line);
-    box-shadow: 0 2px 12px rgba(28,43,74,0.05);
-  }
-  nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1100px; margin:0 auto; flex-wrap:wrap; gap:12px; }
-  .brand{ font-family:'Fraunces', serif; font-weight:700; font-size:1.35rem; }
-  .brand span{ color:var(--brick); }
-  .navlinks{ display:flex; gap:20px; font-weight:600; font-size:0.9rem; flex-wrap:wrap; align-items:center; }
-  .navlinks a:hover{ color:var(--brick); }
-  .founder-pill{
-    background: var(--indigo);
-    color: var(--marigold) !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 700;
-  }
-
-  /* -------- Hero -------- */
-  .hero{
-    position:relative;
-    padding:95px 24px 85px;
-    background: var(--indigo);
-    color: var(--ivory);
-  }
-  .hero-inner{ max-width:1100px; margin:0 auto; }
-  .eyebrow{
-    display:inline-flex; align-items:center; gap:10px;
-    font-size:0.82rem; letter-spacing:0.14em; text-transform:uppercase;
-    color:var(--marigold); font-weight:800; margin-bottom:18px;
-  }
-  .eyebrow::before{ content:""; width:28px; height:2px; background:var(--marigold); display:inline-block; }
-  .hero h1{
-    font-size:clamp(2.3rem, 5vw, 4.1rem);
-    font-weight:600;
-    line-height:1.1;
-    max-width:840px;
-    color: var(--ivory);
-  }
-  .hero h1 em{ font-style:italic; color:var(--marigold); }
-  .hero p.lede{
-    max-width:630px; margin-top:20px; font-size:1.08rem;
-    color:rgba(250,246,236,0.88);
-  }
-  .hero-cta{ display:flex; gap:16px; margin-top:34px; flex-wrap:wrap; }
-  .btn{
-    display:inline-block; padding:13px 26px; border-radius:4px;
-    font-weight:700; font-size:0.94rem;
-  }
-  .btn-primary{ background:var(--marigold); color:var(--indigo-deep); }
-  .btn-ghost{ border:1px solid rgba(250,246,236,0.45); color:var(--ivory); }
-
-  .hero-stats{
-    display:flex; gap:24px; margin-top:60px; border-top:1px solid rgba(250,246,236,0.2); padding-top:26px;
-    flex-wrap:wrap;
-  }
-  .stat{ flex:1; min-width:170px; }
-  .stat b{ font-family:'Fraunces', serif; font-size:1.65rem; display:block; color:var(--marigold); }
-  .stat span{ font-size:0.84rem; color:rgba(250,246,236,0.75); }
-
-  /* -------- Sections -------- */
-  section{ padding:90px 0; }
-  .tag{
-    font-size:0.78rem; letter-spacing:0.16em; text-transform:uppercase;
-    color:var(--brick); font-weight:800; margin-bottom:10px; display:block;
-  }
-  .sec-head{ max-width:700px; margin-bottom:46px; }
-  .sec-head h2{ font-size:clamp(1.85rem,3.4vw,2.6rem); font-weight:600; line-height:1.15; }
-  .sec-head p{ margin-top:12px; color:#4a5470; font-size:1.02rem; }
-
-  .about-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap:46px; align-items:start; }
-  .about-grid p{ color:#3c4560; margin-bottom:16px; font-size:1rem; }
-  .timeline{ border-left:2px solid rgba(28,43,74,0.22); padding-left:24px; display:flex; flex-direction:column; gap:26px; }
-  .tl-item h4{ font-size:1.15rem; font-weight:600; margin-bottom:5px; }
-  .tl-item p{ color:#4a5470; font-size:0.94rem; margin-bottom:0; }
-  .tl-dot{ position:relative; }
-  .tl-dot::before{
-    content:""; position:absolute; left:-29.5px; top:6px;
-    width:10px; height:10px; border-radius:50%; background:var(--marigold);
-  }
-
-  .cards-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 28px;
-  }
-  .info-box{
-    background: var(--ivory);
-    padding: 28px;
-    border-radius: 6px;
-    border: 1px solid var(--line);
-  }
-  .info-box h3{ font-size: 1.28rem; margin-bottom: 10px; color: var(--indigo); }
-  .info-box p{ color: #4a5470; font-size: 0.94rem; }
-
-  .pro-card{
-    background: var(--sand);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  .pro-card img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    background: var(--indigo);
-    display: block;
-  }
-  .pro-card-body{
-    padding: 24px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .pro-role{
-    font-size: 0.74rem;
-    font-weight: 800;
-    color: var(--brick);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-  .pro-card h3{ margin: 6px 0 8px; font-size: 1.24rem; }
-  .pro-card p{ font-size: 0.92rem; color: #4a5470; margin-bottom: 18px; }
-  .pro-btn{
-    display: inline-block;
-    background: var(--indigo);
-    color: var(--marigold);
-    text-align: center;
-    padding: 11px 16px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.86rem;
-  }
-
-  .faq-item{
-    background: var(--ivory);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 24px 28px;
-    margin-bottom: 18px;
-  }
-  .faq-item h4{ font-size: 1.15rem; margin-bottom: 8px; color: var(--indigo); }
-  .faq-item p{ color: #4a5470; font-size: 0.94rem; }
-
-  footer{
-    background: var(--indigo-deep);
-    color: rgba(250,246,236,0.78);
-    text-align: center;
-    padding: 28px 24px;
-    font-size: 0.88rem;
-  }
-</style>
+<!-- Master Design System Stylesheet -->
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
   <!-- TOPMOST OWNER BANNER -->
   <div class="owner-bar">
-    Official Community Portal &bull; Founded &amp; Owned by <strong>Fayyaz Ali Gadehi</strong>
+    Official International Community Portal &bull; Founded &amp; Owned by <strong>Fayyaz Ali Gadehi</strong>
   </div>
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION HEADER -->
   <header>
     <nav>
-      <a href="#" class="brand">Gadehi<span>.</span>Community</a>
+      <a href="index.html" class="brand">Gadehi<span>.</span>Community</a>
       <div class="navlinks">
-        <a href="#chief">Tribal Chief</a>
-        <a href="#history">History</a>
-        <a href="#culture">Culture</a>
-        <a href="#achievers">Notable Members</a>
-        <a href="#faq">FAQ</a>
-        <a href="#founder" class="founder-pill">Founder: Fayyaz Ali Gadehi</a>
+        <a href="history.html">History &amp; Origins</a>
+        <a href="genealogy.html">Family Tree</a>
+        <a href="global-directory.html">Global Directory</a>
+        <a href="professionals.html">Professionals</a>
+        <a href="culture.html">Culture</a>
+        <a href="archives.html">Archives</a>
+        <a href="contribute.html">Contribute</a>
+        <a href="about.html" class="founder-pill">Founder: Fayyaz Ali Gadehi</a>
       </div>
     </nav>
   </header>
@@ -237,30 +45,98 @@ html
   <section class="hero">
     <div class="hero-inner">
       <div class="eyebrow">Founded &amp; Curated by Fayyaz Ali Gadehi</div>
-      <h1>The Heritage &amp; Pride of the <em>Gadehi (Gadhi)</em> Baloch Tribe</h1>
-      <p class="lede">An official digital archive created by <strong>Fayyaz Ali Gadehi</strong> — celebrating our tribal leadership, centuries-old Baloch roots across Sindh and Punjab, and the scholars, judges, and doctors shaping our future.</p>
+      <h1>The Heritage, Genealogy &amp; Pride of the <em>Gadehi (Gadhi)</em> Baloch Tribe</h1>
+      <p class="lede">An official international digital archive preserving our centuries-old roots across Sindh and Balochistan, tribal leadership under Sardar Ali Dino Khan Gadehi, and the global achievements of our professionals and youth.</p>
       <div class="hero-cta">
-        <a href="#founder" class="btn btn-primary">About Founder (Fayyaz Ali Gadehi)</a>
-        <a href="#chief" class="btn btn-ghost">Meet Our Tribal Chief</a>
+        <a href="about.html" class="btn btn-primary">About the Founder &amp; Portal</a>
+        <a href="genealogy.html" class="btn btn-ghost">Explore Genealogy Shajra</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>Fayyaz Ali Gadehi</b><span>Founder &amp; Portal Owner</span></div>
-        <div class="stat"><b>Baloch Lineage</b><span>Larkana, Dadu, Sukkur &amp; Jhang</span></div>
-        <div class="stat"><b>Unity &amp; Honour</b><span>Preserving Culture &amp; Education</span></div>
+        <div class="stat"><b>Fayyaz Ali Gadehi</b><span>Founder &amp; Chief Archivist</span></div>
+        <div class="stat"><b>Baloch Lineage</b><span>Larkana, Dadu, Sukkur &amp; Global Diaspora</span></div>
+        <div class="stat"><b>Verified Archive</b><span>Academic &amp; Community Records</span></div>
       </div>
     </div>
   </section>
 
-  <!-- 2. TRIBAL CHIEF -->
-  <section id="chief" style="background: var(--sand); border-bottom: 1px solid var(--line);">
+  <!-- 2. TRIBAL CHIEF SPOTLIGHT -->
+  <section style="background: var(--sand); border-bottom: 1px solid var(--line);">
     <div class="wrap">
       <div class="sec-head">
         <span class="tag">Chief of the Gadehi (Gadhi) Tribe</span>
         <h2>Sardar Ali Dino Khan Gadehi</h2>
-        <p>Respected Tribal Chief (Sardar) of the Gadehi Baloch tribe, community elder, and prominent political leader in Sindh.</p>
+        <p>Respected Tribal Chief (Sardar) of the Gadehi Baloch community, upholding traditional governance, unity, and welfare across Sindh.</p>
       </div>
 
       <div class="about-grid">
-        <div style="background: var(--indigo); border-radius: 6px; overflow: hidden; border: 2px solid var(--marigold);">
-          <img src="sardar-ali-dino.jpg" alt="Sardar Ali Dino Khan Gadehi" style="width: 100%; height: 360px; object-fit: cover; display: block;" onerror="this.src='https://ui-avatars.com'">
-          <div style="padding: 22px; text-align: center; color: var(--ivory);">
+        <div style="background: var(--indigo); border-radius: 6px; overflow: hidden; border: 2px solid var(--marigold); text-align: center; padding: 30px;">
+          <h3 style="color:var(--marigold); font-size:1.5rem; margin-bottom:8px;">Sardar Ali Dino Khan Gadehi</h3>
+          <p style="font-size:0.92rem; color:rgba(250,246,236,0.85);">Supreme Tribal Leader &amp; Patron</p>
+          <span class="badge badge-verified" style="margin-top:16px;">Verified Leadership Record</span>
+        </div>
+        <div>
+          <h3 style="font-size:1.5rem; color:var(--indigo); margin-bottom:14px;">Role, Leadership &amp; Community Impact</h3>
+          <p><strong>Sardar Ali Dino Khan Gadehi</strong> serves as the respected Chief (Sardar) of the Gadehi Baloch community. His leadership spans across Dadu, Larkana, and interior Sindh, where he plays a pivotal role in resolving community matters, preserving traditional Baloch values, and upholding tribal unity.</p>
+          <p style="margin-top:14px;">Under his guidance, the Gadehi community continues to honor its ancestral traditions while fostering modern education, professional growth, and mutual support across generations.</p>
+          <div style="margin-top:22px; padding:16px 20px; background:rgba(224,166,38,0.15); border-left:4px solid var(--marigold); border-radius:4px;">
+            <p style="font-size:0.92rem; color:var(--indigo); margin-bottom:0;"><strong>Tribal Council &amp; Reconciliation:</strong> Working closely with elders to promote education, resolve local disputes, and assist youth in higher studies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PORTAL ARCHIVE MODULES -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Global Platform Architecture</span>
+        <h2>Explore the Gadehi Baloch Heritage Archive</h2>
+        <p>Navigate our comprehensive multi-section platform dedicated to preserving our history, families, and professional excellence.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="info-box">
+          <h3>📜 History &amp; Migration</h3>
+          <p>Trace the historical origins of the Gadehi name, orthographic variants, and centuries-old migration corridors from Balochistan into Sindh and Punjab.</p>
+          <a href="history.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">Read History &rarr;</a>
+        </div>
+        <div class="info-box">
+          <h3>🌳 Family Trees &amp; Genealogy</h3>
+          <p>Examine patrilineal family branches (*phallis*), ancestral generations, and submit family records to our growing genealogical database.</p>
+          <a href="genealogy.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">Explore Shajra &rarr;</a>
+        </div>
+        <div class="info-box">
+          <h3>🌍 Global Community Directory</h3>
+          <p>Discover Gadehi families and communities across Pakistan, the UAE, Saudi Arabia, the UK, North America, and Europe.</p>
+          <a href="global-directory.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">View Directory &rarr;</a>
+        </div>
+        <div class="info-box">
+          <h3>🎓 Professional Achievers</h3>
+          <p>Recognizing professors, doctors, engineers, judges, entrepreneurs, and students contributing to society across local and international sectors.</p>
+          <a href="professionals.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">Browse Professionals &rarr;</a>
+        </div>
+        <div class="info-box">
+          <h3>🏛️ Culture &amp; Traditions</h3>
+          <p>Preserving classical Baloch values, hospitality (*mayar*), traditional attire, language dialects, and community festivals.</p>
+          <a href="culture.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">Explore Culture &rarr;</a>
+        </div>
+        <div class="info-box">
+          <h3>✍️ Submit Your Profile</h3>
+          <p>Contribute your family history, professional achievements, or historical documents to the official digital archive.</p>
+          <a href="contribute.html" style="display:inline-block; margin-top:14px; font-weight:700; color:var(--brick); font-size:0.9rem;">Contribute Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Gadehi Baloch Global Heritage. Founded &amp; Owned by <strong>Fayyaz Ali Gadehi</strong>. All rights reserved.</p>
+      <p style="margin-top:6px; font-size:0.8rem; color:rgba(250,246,236,0.5);">Official International Community Portal &bull; Preserving Our History &amp; Future Generations</p>
+    </div>
+  </footer>
+
+</body>
+</html>
